@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>密码安全 - 密码生成器</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .security-content {
+            line-height: 1.8;
+        }
+        
+        .security-content h2 {
+            color: var(--primary-color);
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .security-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .security-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .security-tip {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .security-tip h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 1.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .back-link i {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>密码安全指南</h1>
+            <p>了解如何创建和管理强密码，保护您的在线安全</p>
+        </header>
+
+        <main>
+            <div class="security-content">
+                <h2>什么是强密码？</h2>
+                <p>强密码是难以被猜测或通过暴力破解方法破解的密码。一个强密码应该：</p>
+                <ul>
+                    <li>至少12个字符长（更长更好）</li>
+                    <li>包含大写字母、小写字母、数字和特殊字符的组合</li>
+                    <li>避免使用常见词汇、短语或个人信息</li>
+                    <li>对每个账户使用唯一的密码</li>
+                </ul>
+                
+                <div class="security-tip">
+                    <h3>安全提示</h3>
+                    <p>使用密码短语而不是单个单词。例如，将"password"替换为"Tr0ub4dor&3"或更长的短语。</p>
+                </div>
+                
+                <h2>常见密码错误</h2>
+                <p>以下是用户经常犯的密码错误：</p>
+                <ul>
+                    <li>使用个人信息（如生日、宠物名字、家庭成员名字）</li>
+                    <li>使用常见密码（如"123456"、"qwerty"、"password"）</li>
+                    <li>在多个网站使用相同的密码</li>
+                    <li>很少更改密码</li>
+                    <li>将密码写在纸上或未加密的文件中</li>
+                </ul>
+                
+                <h2>密码强度评估标准</h2>
+                <p>我们的密码生成器使用以下标准评估密码强度：</p>
+                <ul>
+                    <li><strong>弱</strong>：少于8个字符或只包含一种字符类型</li>
+                    <li><strong>中</strong>：8-11个字符且包含至少两种字符类型</li>
+                    <li><strong>强</strong>：12-15个字符且包含至少三种字符类型</li>
+                    <li><strong>非常强</strong>：16个或更多字符且包含所有四种字符类型</li>
+                </ul>
+                
+                <div class="security-tip">
+                    <h3>记忆技巧</h3>
+                    <p>使用首字母缩写法：想一个对您有意义的句子，然后使用每个单词的首字母。例如，"我的第一辆车是2005年买的蓝色丰田"可以变成"Wdylc2005ndlct"。</p>
+                </div>
+                
+                <h2>密码管理最佳实践</h2>
+                <p>管理多个强密码可能具有挑战性。以下是一些建议：</p>
+                <ul>
+                    <li>使用可信赖的密码管理器（如LastPass、Bitwarden、1Password等）</li>
+                    <li>启用双因素认证（2FA）</li>
+                    <li>定期更改重要账户的密码</li>
+                    <li>不要在公共设备上保存密码</li>
+                    <li>定期检查账户是否有未授权活动</li>
+                </ul>
+                
+                <h2>密码被盗时的应对措施</h2>
+                <p>如果您怀疑密码被泄露：</p>
+                <ol>
+                    <li>立即更改受影响账户的密码</li>
+                    <li>检查账户活动，查找可疑操作</li>
+                    <li>更改使用相同或相似密码的其他账户</li>
+                    <li>启用双因素认证</li>
+                    <li>监控信用卡和银行账户活动</li>
+                </ol>
+                
+                <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i>返回主页</a>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <a href="about.html">关于</a>
+                <a href="security.html">密码安全</a>
+                <a href="privacy.html">隐私政策</a>
+            </div>
+            <p>&copy; 2023 密码生成器. 保留所有权利.</p>
+        </footer>
+    </div>
+</body>
+</html> 

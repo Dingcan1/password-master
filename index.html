@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>密码生成器</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>密码生成器</h1>
+            <p>生成安全、强大的密码，保护您的在线账户</p>
+        </header>
+
+        <main>
+            <div class="password-display">
+                <input type="text" id="password-output" readonly>
+                <button id="copy-btn" title="复制密码">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </div>
+
+            <div class="password-settings">
+                <div class="setting">
+                    <label for="password-length">密码长度: <span id="length-value">12</span></label>
+                    <input type="range" id="password-length" min="4" max="32" value="12">
+                </div>
+
+                <div class="setting">
+                    <label>
+                        <input type="checkbox" id="uppercase" checked>
+                        包含大写字母 (A-Z)
+                    </label>
+                </div>
+
+                <div class="setting">
+                    <label>
+                        <input type="checkbox" id="lowercase" checked>
+                        包含小写字母 (a-z)
+                    </label>
+                </div>
+
+                <div class="setting">
+                    <label>
+                        <input type="checkbox" id="numbers" checked>
+                        包含数字 (0-9)
+                    </label>
+                </div>
+
+                <div class="setting">
+                    <label>
+                        <input type="checkbox" id="symbols" checked>
+                        包含特殊字符 (!@#$%^&*等)
+                    </label>
+                </div>
+            </div>
+
+            <div class="password-strength">
+                <h3>密码强度</h3>
+                <div class="strength-meter">
+                    <div id="strength-bar"></div>
+                </div>
+                <p id="strength-text">强</p>
+            </div>
+
+            <button id="generate-btn" class="primary-btn">生成密码</button>
+
+            <div class="password-history">
+                <h3>历史记录</h3>
+                <ul id="history-list"></ul>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <a href="about.html">关于</a>
+                <a href="security.html">密码安全</a>
+                <a href="privacy.html">隐私政策</a>
+            </div>
+            <p>&copy; 2023 密码生成器. 保留所有权利.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
